@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SearchFragment">
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.soccer.views.fragments.SearchWeather"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/search_fragment">
+        <action
+            android:id="@+id/action_FirstFragment_to_cityWeather"
+            app:destination="@id/cityWeather" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityWeather"
+        android:name="com.soccer.views.fragments.CityWeather"
+        android:label="fragment_city_weather_list"
+        tools:layout="@layout/fragment_city_weather_list" >
+        <action
+            android:id="@+id/action_cityWeather_to_weatherDetails"
+            app:destination="@id/weatherDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherDetails"
+        android:name="com.soccer.views.fragments.WeatherDetails"
+        android:label="fragment_weather_details"
+        tools:layout="@layout/fragment_weather_details" />
+
+</navigation>

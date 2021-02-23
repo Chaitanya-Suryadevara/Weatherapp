@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="72sp"
+        android:text="72" />
+
+    <TextView android:id="@+id/feelLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_marginLeft="80dp"
+        android:textSize="30sp"
+        android:text="Feel like:" />
+
+    <TextView android:id="@+id/weatherT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="left"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:text="type" />
+
+    <TextView android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:text="Desc" />
+
+
+</LinearLayout>
